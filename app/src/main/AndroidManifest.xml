@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".user"
+            android:exported="false" />
+        <activity
+            android:name=".Welcome"
+            android:exported="false" />
+        <activity
+            android:name=".treatmentreport"
+            android:exported="false" />
+        <activity
+            android:name=".feedsreport"
+            android:exported="false" />
+        <activity
+            android:name=".milkreport"
+            android:exported="false" />
+        <activity
+            android:name=".milk"
+            android:exported="false" />
+        <activity
+            android:name=".addtreatment"
+            android:exported="false" />
+        <activity
+            android:name=".vetmain"
+            android:exported="false" />
+        <activity
+            android:name=".vannouncement"
+            android:exported="false" />
+        <activity
+            android:name=".report"
+            android:exported="false" />
+        <activity
+            android:name=".messagereply"
+            android:exported="false" />
+        <activity
+            android:name=".fmessagemain"
+            android:exported="false" />
+        <activity
+            android:name=".Feeds"
+            android:exported="false" />
+        <activity
+            android:name=".message"
+            android:exported="false" />
+        <activity
+            android:name=".farmer"
+            android:exported="false" />
+        <activity
+            android:name=".fannouncement"
+            android:exported="false" />
+        <activity
+            android:name=".cowsm"
+            android:exported="false" />
+        <activity
+            android:name=".cows2"
+            android:exported="false" />
+        <activity
+            android:name=".admin"
+            android:exported="false" />
+        <activity
+            android:name=".addcows"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".vannouncement">
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="415dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="155dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="ADD AN ANNOUNCEMENTS"
+        android:textColor="@color/teal_200"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/assmntDescription"
+        android:layout_width="362dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter message"
+        android:textColorHint="@color/black"
+        android:background="@color/teal_200"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sbjtext2" />
+
+    <TextView
+        android:id="@+id/assmntTitleLbl"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="80dp"
+        android:background="@color/teal_200"
+        android:gravity="center"
+        android:text="Importance"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sbjtext2"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Subject"
+        android:background="@color/teal_200"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assmntTitleLbl" />
+
+    <EditText
+        android:id="@+id/subjectName"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="26dp"
+        android:background="@color/teal_200"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter subject name "
+
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sbjtext2"
+        app:layout_constraintTop_toBottomOf="@+id/assmntTitle" />
+
+
+    <Button
+        android:id="@+id/buttonSubmitAssmntDetails"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="40dp"
+        android:text="Submit"
+        android:textStyle="bold"
+        app:backgroundTint="@color/teal_200"
+
+        app:cornerRadius="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assmntDescription" />
+
+    <EditText
+        android:id="@+id/assmntTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="26dp"
+        android:background="@color/teal_200"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="level of importance "
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/assmntTitleLbl"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
